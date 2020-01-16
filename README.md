@@ -4,7 +4,7 @@ Arduino nano 33 ble sense can be used to recognize gesture using machine learnin
 This mini project will conform to the following procedure.
 1. Revisit [setting up arduino IDE](https://github.com/billiyz/nano-33-ble-sense) without going through the programming part on sensor data collection.
 2. Look into accelerometer and gyroscope operation
-3. Write a sketch to collect accelerometer, gyroscope and magnetometer sensors data
+3. Write a sketch to collect accelerometer and gyroscope sensors data
 4. Upload the data to the google colaboratory platform
 5. Train a neural
 6. Convert the model into tensorflow lite model
@@ -35,7 +35,7 @@ In IMU 3d accelerometer sensor, the sensing mechanism for all three acceleromete
 The gyroscpe measures the rate of change of angular velocity over time (angular changes). Many of these sensors are MEMS. Gyroscope also relies on the varying capacitance between silicon and mechanical elements, but with this configuration, the sensor generates capacitive changes with angular velocity changes. A 3d gyroscope also has 3 gyroscopic sensors mounted orthogonally to each other.
 
 ![photo 2](images/gyroscope.png)
-# Write a sketch to collect accelerometer, gyroscope and magnetometer sensors data
+# Write a sketch to collect accelerometer and gyroscope sensors data
 To capture the accelerometer and gyroscope data, A sketch is written on arduino IDE and uploaded to the board, or go to [arduinoTensorFlowLite Tutorials](https://github.com/arduino/ArduinoTensorFlowLiteTutorials) for the sketh. The sketch in this repos is labelled nano-33-gesture. Set up Arduino IDE. It aid in both uploading inference models to nano 33 board as well as download training data from it in .csv format. Incase you havent installed and configured your IDE, please check the repository on installing desktop IDE.
 
 Plug the arduino nano 33 ble sense board to the computer, select the board and the port. Arduino boards run small applications (also called sketches) which are compiled from .ino format Arduino source code, and programmed onto the board using the Arduino IDE or Arduino Create. So lets collect the training data.
