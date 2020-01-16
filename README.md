@@ -44,7 +44,7 @@ Plug the Arduino Nano 33 BLE Sense board to the computer, select the board type 
 
 ## Visualize collected data.
 
-On Arduino desktop IDE open Files, click New and save the sketch as **nan0-33-gesture**. There is a filter that performs signal preprocessing and filtering on the device before the data is output to the log. The skech does the following;
+On Arduino desktop IDE open Files, click New and save the sketch as **nan0-data-collect.ino**. There is a filter that performs signal preprocessing and filtering on the device before the data is output to the log. The skech does the following;
 
 1. Detect motion using accelerometer and gyroscope
 2. Trigger a sample window on detecting significant linear acceleration of the board
@@ -74,7 +74,7 @@ While on the Google colaboratory platform, go trough the notebook till the end. 
 
 # Encode the model in arduino header file
 
-Open accelerometer and gyroscope clasifier sketch on this repository named as **nano-33-ble.ino**. It was created by Don Coleman, Sandeep Mistry and modified by Dominic Pajak, Sandeep Mistry. On the far top right, click on the drop down button and click New Tab. Name the file as **model.h** when you save it. Open the downloaded **model.h** file on your favourite editor and copy the content. Paste in your new **model.h** file you created alongside the classifier sketch and save. Upload the sketch and turn to Serial Monitor on on Tools to view result. The confidence of each gesture will be printed to the Serial Monitor showing (0 = low confidence, 1 = high confidence)
+Open accelerometer and gyroscope clasifier sketch on this repository named as **nano-classifier.ino**. It was created by Don Coleman, Sandeep Mistry and modified by Dominic Pajak, Sandeep Mistry. On the far top right, click on the drop down button and click New Tab. Name the file as **model.h** when you save it. Open the downloaded **model.h** file on your favourite editor and copy the content. Paste in your new **model.h** file you created alongside the classifier sketch and save. Upload the sketch and turn to Serial Monitor on on Tools to view result. The confidence of each gesture will be printed to the Serial Monitor showing (0 = low confidence, 1 = high confidence)
 
 ![photo 6](images/model-head.png) 
 ![photo 7](images/classifier-output.png)
