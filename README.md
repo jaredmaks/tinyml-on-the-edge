@@ -56,7 +56,10 @@ Make sure at the top of the serial monitor you have aX,aY,aZ,gX,gY,gZ. With thr 
 # Upload the data to the google colaboratory platform
 
 Open [google Colaboratory platorm](https://colab.research.google.com/drive/1uefbFF_D5cxqgREjxsKVwR9kD4K7tjtZ#scrollTo=Y2gs-PL4xDkZ), Move to Files. Drag and drop your **punch.csv** and **flex.csv** files in the sample_data folder. The google colab provides a Jupyter notebook that allows us to run our TensorFlow training in a web browser.
-![photo 3](images/flex-data.png) ![photo 4](images/punch-data.png)
+
+![photo 3](images/flex.png)
+
+![photo 4](images/punch-data.png)
 
 
 # Train a neural network, build and train a model 
@@ -64,10 +67,12 @@ While on the google colab, go trough the notebook till the end. Convertion the m
 
 ![photo 5](images/model-h.png)
 
-#Encode the model in arduino header file
+# Encode the model in arduino header file
 
 Open our accelerometer and gyroscope clasifier sketch on the repository, created by Don Coleman, Sandeep Mistry and modified by Dominic Pajak, Sandeep Mistry. On the far top right, click on the frop down button and click New Tab and name the file as **model.h**. Open the file and copy whatever was from the **model.h** you downloaded and paste in your new **model.h** file and save. Upload the sketch and turn to serial monitor to view the classification process. The confidence of each gesture will be printed to the Serial Monitor (0 = low confidence, 1 = high confidence)
-![photo 6](images/model-head.png) ![photo 7](images/classifier-output.png)
+
+![photo 6](images/model-head.png) 
+![photo 7](images/classifier-output.png)
 
 Thank you.
 
